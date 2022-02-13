@@ -1,4 +1,3 @@
-#Read txt file and print the sequence and identifier
 def get_sequence(filename):
     """
     Return the all sequences in dict from the txt file.
