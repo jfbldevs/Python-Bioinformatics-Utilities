@@ -13,5 +13,5 @@ def get_sequence(filename):
                 sequences[identifier] += line.strip()
         return sequences
 
-for i in get_sequence('sequences_na.txt'):
-    print(i, get_sequence('sequences_na.txt')[i])
+for i in get_sequence('sequences.txt'):
+    print(i, get_sequence('sequences.txt')[i])
