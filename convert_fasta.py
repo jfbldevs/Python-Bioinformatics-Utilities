@@ -1,7 +1,11 @@
 n = 0
-with open('PositiveData.txt', 'r') as f:
+output = ""
+
+with open('Negative Data/negative_proven.txt', 'r') as f:
     for line in f:
         n += 1
-        print('>' + str(n) + '\n' + line.strip())
-        #print(line.strip())
-        #print('>' + str(n) + '\n' + line)
+        output += '>' + str(n) + '\n' + line.strip() + '\n'
+
+# Save the output to a file
+with open('output.txt', 'w') as f:
+    f.write(output)
